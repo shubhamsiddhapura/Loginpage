@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.highlighted-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 0 10px black, 0 0 20px #ff8a00;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #FF885B, #FFD700);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main {
+  display: flex;
+  width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leftpanel {
+  background-image: url(green.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+}
+
+.leftpanel p {
+ 
+  color: #ffffff;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.rightpanel {
+  background-color: #FFE5CF;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+form {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-top: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #22b573;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a954b;
+}
+
+.terms {
+  margin-top: 15px;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  color: #777;
+}
+
+.terms a {
+  color: #22b573;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
